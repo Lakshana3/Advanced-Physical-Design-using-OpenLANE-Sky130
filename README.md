@@ -119,7 +119,7 @@ Here we are going to look at the detailed design flow of OpenLANE. Like I said b
 
 ![alt_text](images/image20.png "image_tooltip")
 
-First is the RTL synthesis where like we said before, the RTL code is synthesized to get a gate level netlist circuit using the SCL(standard cell libraries). The tools OpenLane uses for this operation are yosys and abc. Yosys performs technology mapping and abc performs RTL synthesis. 
+First is the RTL synthesis where like we said before, the RTL code is synthesized to get a gate level netlist circuit using the SCL(standard cell libraries). The tools OpenLane uses for this operation are yosys and abc. Yosys performs RTL Synthesis and abc performs Technology Mapping. 
 
 There are separate strategies to target optimization in area and timing. Designs can choose these strategies using the synthesis exploration tool which maps the delay and area based on the strategy used. 
 
